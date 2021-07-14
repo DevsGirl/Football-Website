@@ -1,0 +1,321 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap');
+
+/* common styles */
+body {
+    font-family: 'Ubuntu', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 1050px;
+    padding: 15px;
+    margin-top: 21px;
+    border-radius: 5px;
+}
+main {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.button {
+    background: #E02C6D;
+    font-size: 16px;
+    padding: 13px 20px;
+    border-radius: 3px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.fas.fa-arrow-right {
+    margin-left: 5px;
+}
+
+/*--------------hero-area------------ */
+.bg-color{
+    background: blue;
+}
+.half-width{width: 50%;
+padding-left: 6%;
+padding-right: 8%;
+}
+.banner-area {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 1349px;
+	padding: 50px 0;
+    margin-bottom: 20px;
+}
+.half-width img {
+	width: 100%;
+}
+.banner-title h1 {
+	font-size: 56px;
+	color: #fff;
+}
+/*------------top-players-------------*/
+.top-players {
+    margin-bottom: 30px;
+}
+
+.players {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 30px;
+}
+
+.player {
+    box-shadow: 5px 8px 20px #ddd;
+    padding: 15px 16px;
+    border-top-right-radius: 3px;
+    margin-right: 25px;
+    width: 283px;
+}
+.player p {
+	font-size: 16px;
+	line-height: 26px;
+	font-weight: 400;
+}
+.player img {
+    width: 282px;
+    height: 250px;
+}
+.player-name {
+    font-size: 28px;
+    line-height: 40px;
+    color: #18191F;
+    font-weight: 700;
+}
+/*--------------highlight-area--------------*/
+.highlight-area {
+    margin-top: 50px;
+
+}
+.highlight-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.highlight-text h3 {
+    font-size: 48px;
+    line-height: 60px;
+    margin-bottom: 25px;
+}
+
+.highlight-text p {
+    font-size: 16px;
+    line-height: 28px;
+    color: #6C6C6C;
+}
+
+.highlight-image img {
+    width: 486px;
+    height: 425px;
+    margin-left: 30px;
+}
+/*---------------video-area--------------*/
+.video-area {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.news {
+    text-align: justify;
+    padding-left: 40px;
+    margin-bottom: 50px;
+}
+.news h1 {
+    font-size: 34px;
+    font-weight: 700;
+}
+.news p {
+	font-size: 18px;
+	line-height: 26px;
+	font-weight: 400;
+}
+.short-content{
+    width: 150px;
+    border: 2px solid #ddd;
+    overflow: hidden;
+    border-radius: 3px;
+}
+.short-text{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 16px;
+    padding: 7px 6px;
+    margin: 0;
+}
+/*---------------sponsors-area-------------*/
+.sponsors-area {
+    background: gainsboro;
+    padding-bottom: 30px;
+    margin-bottom: 100px;
+}
+.sponsors-area h1 {
+    font-size: 48px;
+    text-align: center;
+}
+.sponsors-company {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.sponsors-logo img {
+    height: 100px;
+    width: 90%;
+    padding-left: 7px;
+}
+/*------------footer-area------------*/
+.footer-area {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.footer-logo {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+.footer-logo img {
+    width: 400px;
+    height: 80px;
+}
+.social-icon {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.social-icon i {
+    font-size: 20px;
+    height: 38px;
+    width: 40px;
+    background: #E7E7E8;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+    margin-right: 20px;
+    color: #969BAB;
+}
+.copyright-area p {
+    font-size: 18px;
+    text-align: center;
+    line-height: 26px;
+    font-weight: 400;
+}
+/*---------------media-query------------*/
+@media only screen and (max-width:688px) {
+    .container{
+        width: 100%;
+        padding: 0 5px;
+    }
+    .banner-area{
+        width: 100%;
+        flex-direction: column;
+    }
+    .banner-title {
+        margin-bottom: 40px;
+    }
+    .banner-title h1 {
+        font-size: 25px;
+    }
+    .half-width img {
+        width: 110%;
+    }
+    .players{
+        grid-template-columns: repeat(1, 1fr);
+       
+    }
+    .player {
+        flex-direction: column;
+    }
+    .highlight-wrapper {
+        display: block;
+    }
+    .highlight-text {
+        padding: 0 10px;
+        margin-bottom: 30px;
+    }
+    .highlight-text h3 {
+        font-size: 30px;
+        line-height: 45px;
+    }
+    .highlight-image img {
+        width: 95%;
+        height: 425px;
+        padding: 0 10px;
+        margin: 0%;
+    }
+    .highlight-area {
+        margin-top: 50px;
+      
+    }
+    .video-area {
+        display: block;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .news {
+        text-align: justify;
+        padding: 0 25px;
+        margin-bottom: 50px;
+    }
+    .sponsors-area {
+        margin-bottom: 20px;
+    }
+    .sponsors-company {
+        display: normal;
+    }
+}
+/* tablet devices */
+@media only screen and (min-width:688px) and (max-width:992px){
+    .container{
+        width: 100%;
+    }
+    .banner-area{
+        width: 100%;
+        flex-direction: row;
+    }
+    .banner-title h1 {
+        font-size: 40px;
+    }
+    .players {
+        grid-template-columns: repeat(2, 1fr);
+    }
+        
+    .highlight-wrapper {
+        display: block;
+    }
+    .highlight-text {
+        padding: 0 10px;
+        margin-bottom: 30px;
+    }
+    .highlight-text h3 {
+        font-size: 30px;
+        line-height: 45px;
+    }
+    .highlight-image img {
+        width: 95%;
+        height: 425px;
+        padding: 0 10px;
+        margin: 0%;
+    }
+    .highlight-area {
+        margin-top: 50px;
+      
+    }
+    .video-area {
+        display: block;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .news {
+        text-align: justify;
+        padding: 0 25px;
+        margin-bottom: 50px;
+    }
+}
